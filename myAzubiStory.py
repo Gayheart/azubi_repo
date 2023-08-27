@@ -4,7 +4,7 @@ Week 2, Python intro
 NB: All Contributions gladly welcomed!
 Task: Take imputs and put together an azubi experinece story
 extra: error handling and saving text generated
-Contributions welcomed
+Contributions welcomed!
 """
 
 
