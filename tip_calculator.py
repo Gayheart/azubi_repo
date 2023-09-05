@@ -1,3 +1,6 @@
+TIP_PERCENT = 0.18
+TAX_PERCENT = 0.07
+
 def tipAndTax(tip_percent:float, tax_percent:float, amount:float) -> float:
     """Calculate food tip and tax"""
     tip = tip_percent * amount
@@ -15,12 +18,10 @@ def getFoodCharge():
             return amount
         
 def main():
-    tip_percent = 0.18
-    tax_percent = 0.07
     foodCharge = getFoodCharge()
-    tip, tax = tipAndTax(tip_percent, tax_percent, foodCharge)
-    print(f"Tip = ${tip} \nSales tax = ${tax} \n\
-Grand total = ${round(foodCharge + tip + tax, 2)}")
+    tip, tax = tipAndTax(TIP_PERCENT, TAX_PERCENT, foodCharge)
+    print(f"Tip = ${tip: .2f} \nSales tax = ${tax: .2f} \n\
+Grand total = ${foodCharge + tip + tax: .2f}")
 
 if __name__ == "__main__":
     main()
